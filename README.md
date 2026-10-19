@@ -1,3 +1,7 @@
+[![Ko-fi](https://img.shields.io/badge/Ko--fi-Support%20yingzi-FF5E5B?logo=ko-fi&logoColor=white)](https://ko-fi.com/yingzi62662)
+
+**Model weights (Hugging Face):** [androidli/GLM-5.3-Flash-Uncensored-EXL3-3.0bpw-mcg-TensorFold](https://huggingface.co/androidli/GLM-5.3-Flash-Uncensored-EXL3-3.0bpw-mcg-TensorFold) — this repo is its serving-side counterpart (patches / kernel / Dockerfile); the two projects depend on each other.
+
 # GLM-5.3-Flash EXL3 3-bit on TensorFold (2× DGX Spark)
 
 **Status: in production.** The 3.0bpw pack this project enables is published at
