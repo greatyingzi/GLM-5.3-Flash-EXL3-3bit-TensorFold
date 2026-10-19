@@ -1,0 +1,22 @@
+NOTICE — GLM-5.3-Flash EXL3 3-bit on TensorFold (2x DGX Spark)
+
+This repository contains original patch scripts, a custom CUDA kernel, and packaging tools
+by greatyingzi (https://github.com/greatyingzi, https://x.com/greatYiTin), licensed Apache-2.0.
+
+Upstream works this project derives from / depends on:
+
+1. TensorFold (https://github.com/ashhart/TensorFold), Apache-2.0.
+   The patch scripts modify files inside the TensorFold 0.6.0 Python package
+   (families/glm5_next/cuda/*, cuda/exl3/*) at Docker build time. The patched files are
+   marked in-place by the scripts (anchors "tf-v7", "tf-v12", "EXL3_ALLOWED_BITS", etc.).
+
+2. Mia's AI Lab GLM-5.3-Flash-EXL3-2x-DGX-Sparks serving kit
+   (https://github.com/MiaAI-Lab/GLM-5.3-Flash-EXL3-2x-DGX-Sparks), Apache-2.0.
+   The base container image used by the Dockerfile comes from this kit's recipe
+   (TensorFold v0.6.0 build). We are not affiliated with MiaAI-Lab or the TensorFold author.
+
+3. The quantized model this project serves:
+   https://huggingface.co/androidli/GLM-5.3-Flash-Uncensored-EXL3-3.0bpw-mcg-TensorFold
+   (MIT, base: dealignai/GLM-5.3-Flash-UNCENSORED-FP8 <- zai-org/GLM-5.3-Flash).
+
+No weights are redistributed in this repository.
